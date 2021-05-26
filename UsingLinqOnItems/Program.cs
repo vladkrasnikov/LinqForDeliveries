@@ -18,6 +18,11 @@ namespace UsingLinqOnItems
     
     public class Program
     {
+        /// <summary>
+        /// Вивести середній обсяг поставок товару з заданим кодом, здійснених протягом другого півріччя минулого року.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static double Task1(int id)
         {
             var task1Query = from delivery in Data.deliveries
@@ -29,6 +34,11 @@ namespace UsingLinqOnItems
 
             return task1Query.Average();
         }
+        /// <summary>
+        /// Вивести постачальників, які поставили товар із заданою назвою за найменшою ціною.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public static string Task2(string name)
         {
             string ansTask2 = "";
@@ -51,6 +61,10 @@ namespace UsingLinqOnItems
             }
             return ansTask2;
         }
+        /// <summary>
+        /// Вивести по кожній наявній назві товару можливий прибуток від його реалізації
+        /// </summary>
+        /// <returns></returns>
         public static Dictionary<string, decimal> Task3()
         {
             var task3Query = from item in Data.items
@@ -59,7 +73,15 @@ namespace UsingLinqOnItems
                              orderby nGroup.Key
                              select new { Name = nGroup.Key, Prubytok = nGroup.Sum(x => (x.sPrice - x.dPrice) * x.Amount) };
 
-           var ans = task3Query.Union(Data.items.Select(x => x.Name).Except(task3Query.Select(s => s.Name)).Select(y => new { Name = y, Prubytok = (decimal)0 }));
+            /*var newq = from i in task3Query
+                       select new { Name = i.Name };
+            var newq2 = from item in Data.items
+                        select new { Name = item.Name };
+            var qq = newq2.Except(newq).Select(s=> new {Name = s.Name, Prubytok =(decimal) 0 });
+            var ans = task3Query.Union(qq);*/
+
+            //обираємо з айтемс поле нейм, далі виключаємо імя які обрано з такс3Квері і вибираємо новий нл з імям і прибуток 0, обєднуємо з такс3
+            var ans = task3Query.Union(Data.items.Select(x => x.Name).Except(task3Query.Select(s => s.Name)).Select(y => new { Name = y, Prubytok = (decimal)0 }));
 
             Dictionary<string, decimal> prubytok = ans.ToDictionary(x => x.Name, s => s.Prubytok);
 
@@ -72,9 +94,20 @@ namespace UsingLinqOnItems
         }
         static void Main(string[] args)
         {
+            /*Task1(id: 1);
+            Task1(id: 2);
+            Task1(id: 3);
+            Task1(id: 4);
+            Task1(id: 5);
+            Task1(id: 6);
+            Task1(id: 7);
+            Task1(id: 8);
+            Task1(id: 9);
+            Task1(id: 10);*/
             Task1(7);
             Console.WriteLine();
             Task2("Samsung");
+            //var s = Task2("Poco") + Task2("HTC");
             Console.WriteLine();
             Task3();
        

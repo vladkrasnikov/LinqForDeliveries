@@ -1,0 +1,18 @@
+Tasks must be performed using queries or LINQ methods. Cycles are possible
+use only when outputting query results.
+Basic types collection elements and the collections themselves (lists or arrays) must be described and initialized separately
+class. The solution of each task should be contained in a separate method (TaskA, TaskB, TaskC). Parameters
+methods should be determined based on the condition of the tasks.
+When performing tasks, each of the two options must be used at least once syntax (queries and methods).
+It is necessary to test all completed tasks using unit-tests.
+Each of the collections must contain at least 20 items.
+
+TASK:
+Elements of the collection "Goods" have the following structure: product code, product name, number of units
+goods, the selling price of units of goods (codes are unique, may lead to re-connection). Elements
+"Supplies" collection can indicate the product code, date, name of delivery, volume of deliveries, price for
+unit.
+a) Print the average volume of delivery of goods with a given code, tested in the second half
+last year.
+b) List the suppliers who delivered the product with the specified name for the lowest price.
+c) To deduce on each available name of the goods possible profit from its realization.
