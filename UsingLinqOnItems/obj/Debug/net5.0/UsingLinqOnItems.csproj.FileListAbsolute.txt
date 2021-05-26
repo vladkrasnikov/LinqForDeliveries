@@ -1,0 +1,16 @@
+F:\Labs_C#\Lab5\UsingLinqOnItems\obj\Debug\net5.0\UsingLinqOnItems.csprojAssemblyReference.cache
+F:\Labs_C#\Lab5\UsingLinqOnItems\obj\Debug\net5.0\UsingLinqOnItems.GeneratedMSBuildEditorConfig.editorconfig
+F:\Labs_C#\Lab5\UsingLinqOnItems\obj\Debug\net5.0\UsingLinqOnItems.AssemblyInfoInputs.cache
+F:\Labs_C#\Lab5\UsingLinqOnItems\obj\Debug\net5.0\UsingLinqOnItems.AssemblyInfo.cs
+F:\Labs_C#\Lab5\UsingLinqOnItems\obj\Debug\net5.0\UsingLinqOnItems.csproj.CoreCompileInputs.cache
+F:\Labs_C#\Lab5\UsingLinqOnItems\bin\Debug\net5.0\UsingLinqOnItems.exe
+F:\Labs_C#\Lab5\UsingLinqOnItems\bin\Debug\net5.0\UsingLinqOnItems.deps.json
+F:\Labs_C#\Lab5\UsingLinqOnItems\bin\Debug\net5.0\UsingLinqOnItems.runtimeconfig.json
+F:\Labs_C#\Lab5\UsingLinqOnItems\bin\Debug\net5.0\UsingLinqOnItems.runtimeconfig.dev.json
+F:\Labs_C#\Lab5\UsingLinqOnItems\bin\Debug\net5.0\UsingLinqOnItems.dll
+F:\Labs_C#\Lab5\UsingLinqOnItems\bin\Debug\net5.0\ref\UsingLinqOnItems.dll
+F:\Labs_C#\Lab5\UsingLinqOnItems\bin\Debug\net5.0\UsingLinqOnItems.pdb
+F:\Labs_C#\Lab5\UsingLinqOnItems\obj\Debug\net5.0\UsingLinqOnItems.dll
+F:\Labs_C#\Lab5\UsingLinqOnItems\obj\Debug\net5.0\ref\UsingLinqOnItems.dll
+F:\Labs_C#\Lab5\UsingLinqOnItems\obj\Debug\net5.0\UsingLinqOnItems.pdb
+F:\Labs_C#\Lab5\UsingLinqOnItems\obj\Debug\net5.0\UsingLinqOnItems.genruntimeconfig.cache
